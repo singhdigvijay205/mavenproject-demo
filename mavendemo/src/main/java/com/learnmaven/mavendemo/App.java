@@ -8,13 +8,13 @@ import org.apache.log4j.Logger;
  */
 public class App 
 {
-	final static Logger LOGGER = Logger.getLogger(App.class);
+	final static Logger logger = logger.getlogger(App.class);
     public static void main( String[] args )
     {
     	Calculator calc = new Calculator();
-    	LOGGER.debug(calc.add(1, 7));
-    	LOGGER.debug(calc.subtract(1, 2));
-    	LOGGER.debug(calc.multiply(1, 2));
-    	LOGGER.debug(calc.divide(1, 2));
+    	logger.debug(calc.add(1, 7));
+    	logger.debug(calc.subtract(1, 2));
+    	logger.debug(calc.multiply(1, 2));
+    	logger.debug(calc.divide(1, 2));
     }
 }
